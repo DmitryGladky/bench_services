@@ -119,6 +119,28 @@
           "NETStandard.Library": "1.6.1"
         }
       },
+      "Google.Protobuf": {
+        "type": "Transitive",
+        "resolved": "3.21.5",
+        "contentHash": "d7zwRm0edg2cxqRynMD31F8HUUyicBT0l5M74EIsU6GAaq3dxxaZ/PpSPlso010W9nIXoVVKUYZSsiOspAOO/A=="
+      },
+      "Grpc.Core": {
+        "type": "Transitive",
+        "resolved": "2.46.3",
+        "contentHash": "lu7KP7BVWdvFXWbn/IFYHBQCpMohJwbLM1aL+nu2C0pY2CdS0idaUNAJNC2nZ60fXfqoxnSiERrIU6rC474oTw==",
+        "dependencies": {
+          "Grpc.Core.Api": "2.46.3",
+          "System.Memory": "4.5.3"
+        }
+      },
+      "Grpc.Core.Api": {
+        "type": "Transitive",
+        "resolved": "2.46.3",
+        "contentHash": "uy1oe5baVa4V+C8ZyMiA8xYdNIx5A3PiacQL0f1zWDjF2z64Cb1MMXXRTs3GX+jeKpoK/RtOZg8UnJSm2KC/pQ==",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        }
+      },
       "MediatR": {
         "type": "Transitive",
         "resolved": "10.0.1",
@@ -1012,6 +1034,11 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.Memory": {
+        "type": "Transitive",
+        "resolved": "4.5.3",
+        "contentHash": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA=="
+      },
       "System.Net.Http": {
         "type": "Transitive",
         "resolved": "4.3.0",
@@ -1573,17 +1600,12 @@
           "xunit.extensibility.core": "[2.4.2]"
         }
       },
-      "application": {
-        "type": "Project",
-        "dependencies": {
-          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
-          "Talabat.ServiceBench.Interfaces": "1.0.0"
-        }
-      },
       "service": {
         "type": "Project",
         "dependencies": {
           "Ensure.That": "10.1.0",
+          "Google.Protobuf": "3.21.5",
+          "Grpc.Core": "2.46.3",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "Microsoft.AspNetCore.HeaderPropagation": "6.0.8",
           "Microsoft.AspNetCore.Mvc.Versioning": "5.0.0",

@@ -8,6 +8,28 @@
         "resolved": "10.1.0",
         "contentHash": "rzTMSs0lQnu0WsesvTjs/zDzqiZXb9r5dv+wFQcPg/iIZqXb5BzwpIWEwi8Q3HA0TS4ytRcY129aSek6IzuOmA=="
       },
+      "Google.Protobuf": {
+        "type": "Direct",
+        "requested": "[3.21.5, )",
+        "resolved": "3.21.5",
+        "contentHash": "d7zwRm0edg2cxqRynMD31F8HUUyicBT0l5M74EIsU6GAaq3dxxaZ/PpSPlso010W9nIXoVVKUYZSsiOspAOO/A=="
+      },
+      "Grpc.Core": {
+        "type": "Direct",
+        "requested": "[2.46.3, )",
+        "resolved": "2.46.3",
+        "contentHash": "lu7KP7BVWdvFXWbn/IFYHBQCpMohJwbLM1aL+nu2C0pY2CdS0idaUNAJNC2nZ60fXfqoxnSiERrIU6rC474oTw==",
+        "dependencies": {
+          "Grpc.Core.Api": "2.46.3",
+          "System.Memory": "4.5.3"
+        }
+      },
+      "Grpc.Tools": {
+        "type": "Direct",
+        "requested": "[2.48.0, )",
+        "resolved": "2.48.0",
+        "contentHash": "53PFxisWVWweF/LNK/8T9NHQhCzHi9yjcYqk8vf/Mt7He+P8dVgaES6XeATW5WWWsIVNBaBZxxavRRMvjrLalQ=="
+      },
       "MediatR.Extensions.Microsoft.DependencyInjection": {
         "type": "Direct",
         "requested": "[10.0.1, )",
@@ -176,6 +198,14 @@
           "Swashbuckle.AspNetCore.Swagger": "6.4.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.4.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.4.0"
+        }
+      },
+      "Grpc.Core.Api": {
+        "type": "Transitive",
+        "resolved": "2.46.3",
+        "contentHash": "uy1oe5baVa4V+C8ZyMiA8xYdNIx5A3PiacQL0f1zWDjF2z64Cb1MMXXRTs3GX+jeKpoK/RtOZg8UnJSm2KC/pQ==",
+        "dependencies": {
+          "System.Memory": "4.5.3"
         }
       },
       "MediatR": {
@@ -449,6 +479,11 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+      "System.Memory": {
+        "type": "Transitive",
+        "resolved": "4.5.3",
+        "contentHash": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA=="
+      },
       "System.Net.Http.Json": {
         "type": "Transitive",
         "resolved": "6.0.0",
@@ -477,13 +512,6 @@
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Text.Encodings.Web": "6.0.0"
-        }
-      },
-      "application": {
-        "type": "Project",
-        "dependencies": {
-          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
-          "Talabat.ServiceBench.Interfaces": "1.0.0"
         }
       },
       "Talabat.ServiceBench.Interfaces": {

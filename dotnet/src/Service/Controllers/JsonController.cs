@@ -9,11 +9,11 @@ namespace Talabat.ServiceBench.Controllers;
 [Produces("application/json")]
 [ApiVersion("1")]
 [ExcludeFromCodeCoverage]
-public class ExampleController : ControllerBase, IExample
+public class JsonController : ControllerBase, IExample
 {
     private IConfiguration Config { get; }
 
-    public ExampleController(IConfiguration config, ILogger<ExampleController> logger) : base(logger)
+    public JsonController(IConfiguration config, ILogger<JsonController> logger) : base(logger)
     {
         Config = config ?? throw new ArgumentNullException(nameof(config));
     }
