@@ -7,13 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
 		.editorconfig = .editorconfig
-		.gitattributes = .gitattributes
-		.gitignore = .gitignore
-		api-info.yaml = api-info.yaml
-		catalog-info.yaml = catalog-info.yaml
-		cicd.png = cicd.png
 		Directory.Build.props = Directory.Build.props
-		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".circleci", ".circleci", "{53B8CF23-9301-4BB3-96E5-AC9E02175154}"
@@ -40,22 +34,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\size-label.yml = .github\workflows\size-label.yml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "charts", "charts", "{3134FED1-0EF2-4D6C-910C-62A66213FA68}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "quality", "quality", "{93FF0C84-6BF7-4217-BE38-64DADF627AC3}"
 	ProjectSection(SolutionItems) = preProject
 		quality\Analyzers.ruleset = quality\Analyzers.ruleset
 		quality\Resharper.DotSettings = quality\Resharper.DotSettings
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service-bench", "service-bench", "{3C8D2206-6047-4B1C-926C-45C8B9343C5F}"
-	ProjectSection(SolutionItems) = preProject
-		charts\service-bench\.gitignore = charts\service-bench\.gitignore
-		charts\service-bench\.helmignore = charts\service-bench\.helmignore
-		charts\service-bench\Chart.yaml = charts\service-bench\Chart.yaml
-		charts\service-bench\values.dev.yaml = charts\service-bench\values.dev.yaml
-		charts\service-bench\values.prod.yaml = charts\service-bench\values.prod.yaml
-		charts\service-bench\values.qa.yaml = charts\service-bench\values.qa.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{B7D4144D-E5DC-4704-A2AE-7A2578702901}"
@@ -104,9 +86,7 @@ Global
 		{6E57612E-FA3B-4889-BD92-2249ABAB2CB6} = {93968586-B6AA-47D1-BE72-4619F07090F9}
 		{8E51DB7B-783D-479A-B91C-477817ED9165} = {93968586-B6AA-47D1-BE72-4619F07090F9}
 		{C6E119E3-E67F-4E1C-A3A9-162210D1C0DA} = {8E51DB7B-783D-479A-B91C-477817ED9165}
-		{3134FED1-0EF2-4D6C-910C-62A66213FA68} = {93968586-B6AA-47D1-BE72-4619F07090F9}
 		{93FF0C84-6BF7-4217-BE38-64DADF627AC3} = {93968586-B6AA-47D1-BE72-4619F07090F9}
-		{3C8D2206-6047-4B1C-926C-45C8B9343C5F} = {3134FED1-0EF2-4D6C-910C-62A66213FA68}
 		{B7D4144D-E5DC-4704-A2AE-7A2578702901} = {3C8D2206-6047-4B1C-926C-45C8B9343C5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

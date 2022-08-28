@@ -2,7 +2,12 @@ version: "3.9" # optional since v1.27.0
 
 services:
   dotnet:
-    build: dotnet/src/service
+    build: dotnet
+    environment:
+      - ASPNETCORE_URLS=http://localhost:5171
+      - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "5080:80"
       - "5443:443"
+      - "7171:7171"
+      - "5171:5171"

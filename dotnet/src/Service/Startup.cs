@@ -57,6 +57,7 @@ public class Startup
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
+        Console.WriteLine("Config");
         if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
@@ -70,7 +71,6 @@ public class Startup
         app.UseSwagger(serviceOptions);
         app.UseAuthentication();
         app.UseAuthorization();
-        app.UseCors(CorsExtension.AllowCustomOrigins);
         app.UseEndpoints(
             endpoints =>
             {
