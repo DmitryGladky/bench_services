@@ -48,19 +48,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "quality", "quality", "{93FF
 		quality\Resharper.DotSettings = quality\Resharper.DotSettings
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "${{values.service_slug}}", "${{values.service_slug}}", "{3C8D2206-6047-4B1C-926C-45C8B9343C5F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service-bench", "service-bench", "{3C8D2206-6047-4B1C-926C-45C8B9343C5F}"
 	ProjectSection(SolutionItems) = preProject
-		charts\${{values.service_slug}}\.gitignore = charts\${{values.service_slug}}\.gitignore
-		charts\${{values.service_slug}}\.helmignore = charts\${{values.service_slug}}\.helmignore
-		charts\${{values.service_slug}}\Chart.yaml = charts\${{values.service_slug}}\Chart.yaml
-		charts\${{values.service_slug}}\values.dev.yaml = charts\${{values.service_slug}}\values.dev.yaml
-		charts\${{values.service_slug}}\values.prod.yaml = charts\${{values.service_slug}}\values.prod.yaml
-		charts\${{values.service_slug}}\values.qa.yaml = charts\${{values.service_slug}}\values.qa.yaml
+		charts\service-bench\.gitignore = charts\service-bench\.gitignore
+		charts\service-bench\.helmignore = charts\service-bench\.helmignore
+		charts\service-bench\Chart.yaml = charts\service-bench\Chart.yaml
+		charts\service-bench\values.dev.yaml = charts\service-bench\values.dev.yaml
+		charts\service-bench\values.prod.yaml = charts\service-bench\values.prod.yaml
+		charts\service-bench\values.qa.yaml = charts\service-bench\values.qa.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{B7D4144D-E5DC-4704-A2AE-7A2578702901}"
 	ProjectSection(SolutionItems) = preProject
-		charts\${{values.service_slug}}\templates\externalsecret.yaml = charts\${{values.service_slug}}\templates\externalsecret.yaml
+		charts\service-bench\templates\externalsecret.yaml = charts\service-bench\templates\externalsecret.yaml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "src\Service\Service.csproj", "{9DE6D420-581F-4BAE-ADB8-FC2FA6BFE40C}"

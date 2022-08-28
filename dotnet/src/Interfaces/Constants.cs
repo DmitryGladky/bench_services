@@ -5,7 +5,7 @@ namespace Talabat.ServiceBench;
 [ExcludeFromCodeCoverage]
 public static class Constants
 {
-    public const string ServiceName = "${{values.service_slug}}";
+    public const string ServiceName = "service-bench";
     public const string ConfigKey = "ServiceBench";
     public const string BasePath = "MsBasePath";
     public const string ExternalService = "ExternalService";
