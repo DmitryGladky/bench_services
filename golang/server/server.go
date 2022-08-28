@@ -31,6 +31,7 @@ import (
 
 	pb "github.com/bench_services/golang/grpc"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/reflection"
 )
 
 var (
@@ -38,7 +39,7 @@ var (
 	certFile   = flag.String("cert_file", "", "The TLS cert file")
 	keyFile    = flag.String("key_file", "", "The TLS key file")
 	jsonDBFile = flag.String("json_db_file", "", "A json file containing a list of features")
-	port       = flag.Int("port", 50051, "The server port")
+	port       = flag.Int("port", 8010, "The server port")
 )
 
 type routeGuideServer struct {
@@ -71,12 +72,15 @@ func newServer() *routeGuideServer {
 
 func main() {
 	flag.Parse()
-	lis, err := net.Listen("tcp", fmt.Sprintf("localhost:%d", *port))
+	lis, err := net.Listen("tcp", fmt.Sprintf("0.0.0.0:%d", *port))
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
 	var opts []grpc.ServerOption
 	grpcServer := grpc.NewServer(opts...)
 	pb.RegisterTestServer(grpcServer, newServer())
+	reflection.Register(grpcServer)
+
+	log.Printf("Serving")
 	grpcServer.Serve(lis)
 }
