@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="..\..\..\shared\grpc\*.proto" GrpcServices="Server" />
+    <Protobuf Include="..\..\grpc\*.proto" GrpcServices="Server" />
   </ItemGroup>
   
   <ItemGroup>
