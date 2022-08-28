@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "github.com/bench_services/golang/grpc";
+
+service Test {
+  rpc Long (LongRequest) returns (LongReply);
+  rpc LongStream (LongRequest) returns (stream StreamReply);
+}
+
+message LongRequest {
+  int32 count = 1;
+}
+
+message LongReply {
+  repeated int32 id = 1;
+}
+
+message StreamReply {
+  int32 id = 1;
+}
