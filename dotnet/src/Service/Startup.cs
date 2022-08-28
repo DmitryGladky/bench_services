@@ -71,6 +71,7 @@ public class Startup
         app.UseSwagger(serviceOptions);
         app.UseAuthentication();
         app.UseAuthorization();
+        app.UseCors(CorsExtension.AllowCustomOrigins);
         app.UseEndpoints(
             endpoints =>
             {

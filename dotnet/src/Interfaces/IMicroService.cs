@@ -16,7 +16,5 @@ public interface IHealth
 
 public interface IExample
 {
-    Task<AdviceResponse> RelayMessageAsync(int adviceId);
-    Task<CartResponse> GetCart(string id);
-    Task<CartCreateResponse> CreateCart(CartCreateRequest request);
+    Task<LongResponse> LongResponse(int count);
 }

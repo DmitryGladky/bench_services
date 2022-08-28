@@ -4,10 +4,10 @@ services:
   dotnet:
     build: dotnet
     environment:
-      - ASPNETCORE_URLS=http://localhost:5171
+      - ASPNETCORE_URLS=http://0.0.0.0:5171;http://0.0.0.0:80
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "5080:80"
       - "5443:443"
-      - "7171:7171"
-      - "5171:5171"
+      - "5081:7171"
+      - "5082:5171"
