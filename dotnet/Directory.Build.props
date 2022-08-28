@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Talabat DHME</Authors>
+    <Copyright>Copyright © $([System.DateTime]::Now.Year)</Copyright>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageTags>Talabat;Service</PackageTags>
+
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>NU5105</NoWarn>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <RootNamespace>Talabat.${{values.component_id}}</RootNamespace>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj'">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" Condition="'$(GITHUB_ACTIONS)' == 'true'" />
+  </ItemGroup>
+</Project>
