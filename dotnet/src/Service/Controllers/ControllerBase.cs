@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 
-namespace Talabat.${{values.component_id}}.Controllers;
+namespace Talabat.ServiceBench.Controllers;
 
 [ExcludeFromCodeCoverage]
 public abstract class ControllerBase : IDisposable

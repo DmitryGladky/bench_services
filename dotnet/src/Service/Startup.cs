@@ -8,10 +8,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Refit;
-using Talabat.${{values.component_id}}.Extensions;
-using Talabat.${{values.component_id}}.External;
+using Talabat.ServiceBench.Extensions;
+using Talabat.ServiceBench.External;
 
-namespace Talabat.${{values.component_id}};
+namespace Talabat.ServiceBench;
 
 [ExcludeFromCodeCoverage]
 public class Startup
@@ -31,14 +31,14 @@ public class Startup
             .AddHeaderPropagation()
             .AddApiVersioning(options =>
             {
-                options.DefaultApiVersion = new ApiVersion(1,0);
+                options.DefaultApiVersion = new ApiVersion(1, 0);
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.ReportApiVersions = true;
             })
             .AddHealthChecks();
         services.AddSwaggerGen(options =>
         {
-            options.SwaggerDoc("v1", new OpenApiInfo {Title = Constants.ServiceName, Version = "v1"});
+            options.SwaggerDoc("v1", new OpenApiInfo { Title = Constants.ServiceName, Version = "v1" });
             options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Service.xml"));
         });
 

@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace Talabat.${{values.component_id}}.CQRS.Cart.Queries
+namespace Talabat.ServiceBench.CQRS.Cart.Queries
 {
     public class GetCartQuery : IRequest<CartResponse>
     {

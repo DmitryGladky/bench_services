@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace Talabat.${{values.component_id}}.CQRS.Cart.Queries
+namespace Talabat.ServiceBench.CQRS.Cart.Queries
 {
     public class GetCartQueryHandler : IRequestHandler<GetCartQuery, CartResponse>
     {

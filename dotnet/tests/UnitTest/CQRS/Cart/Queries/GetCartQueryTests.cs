@@ -4,7 +4,7 @@ using AutoFixture;
 using FluentAssertions;
 using Xunit;
 
-namespace Talabat.${{values.component_id}}.CQRS.Cart.Queries
+namespace Talabat.ServiceBench.CQRS.Cart.Queries
 {
     public class GetCartQueryTests
     {
@@ -34,7 +34,7 @@ namespace Talabat.${{values.component_id}}.CQRS.Cart.Queries
             var actual = await getCartQueryHandler.Handle(getQuery, default);
 
 
-            actual.Should().BeEquivalentTo(expected, opt => opt.Excluding(ex=>ex.VendorId));
+            actual.Should().BeEquivalentTo(expected, opt => opt.Excluding(ex => ex.VendorId));
         }
     }
 }

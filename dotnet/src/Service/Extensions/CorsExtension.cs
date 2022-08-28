@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
-using Talabat.${{values.component_id}}.Extensions.Configuration;
+using Talabat.ServiceBench.Extensions.Configuration;
 
-namespace Talabat.${{values.component_id}}.Extensions;
+namespace Talabat.ServiceBench.Extensions;
 
 [ExcludeFromCodeCoverage]
 public static class CorsExtension

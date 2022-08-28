@@ -483,10 +483,10 @@
         "type": "Project",
         "dependencies": {
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
-          "Talabat.${{values.component_id}}.Interfaces": "1.0.0"
+          "Talabat.ServiceBench.Interfaces": "1.0.0"
         }
       },
-      "Talabat.${{values.component_id}}.Interfaces": {
+      "Talabat.ServiceBench.Interfaces": {
         "type": "Project"
       }
     }

@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Serilog;
 
-namespace Talabat.${{values.component_id}};
+namespace Talabat.ServiceBench;
 
 [ExcludeFromCodeCoverage]
 public static class Program

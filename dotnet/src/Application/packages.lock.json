@@ -30,7 +30,7 @@
         "resolved": "6.0.0",
         "contentHash": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg=="
       },
-      "Talabat.${{values.component_id}}.Interfaces": {
+      "Talabat.ServiceBench.Interfaces": {
         "type": "Project"
       }
     }

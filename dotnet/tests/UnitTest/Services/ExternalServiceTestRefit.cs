@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
 using KellermanSoftware.CompareNetObjects;
 using Refit;
-using Talabat.${{values.component_id}}.External;
+using Talabat.ServiceBench.External;
 using Xunit;
 
-namespace Talabat.${{values.component_id}}.Services
+namespace Talabat.ServiceBench.Services
 {
     public class ExternalServiceTestRefit
     {
@@ -23,7 +23,8 @@ namespace Talabat.${{values.component_id}}.Services
             {
                 Slip = new AdviceSlip()
                 {
-                    Id = 1, Advice = "Remember that spiders are more afraid of you, than you are of them."
+                    Id = 1,
+                    Advice = "Remember that spiders are more afraid of you, than you are of them."
                 }
             };
 

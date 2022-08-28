@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Talabat.${{values.component_id}};
+namespace Talabat.ServiceBench;
 
 public interface IExternalService
 {

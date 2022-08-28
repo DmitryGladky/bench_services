@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Moq;
-using Talabat.${{values.component_id}}.External;
+using Talabat.ServiceBench.External;
 using Xunit;
 
-namespace Talabat.${{values.component_id}}.Controllers
+namespace Talabat.ServiceBench.Controllers
 {
     public class ExampleControllerTest
     {
@@ -17,7 +17,7 @@ namespace Talabat.${{values.component_id}}.Controllers
         private readonly DateTime dateTime;
         private readonly Mock<IExternalServiceClient> externalService;
 
-        public ExampleControllerTest ()
+        public ExampleControllerTest()
         {
             var config = new Mock<IConfiguration>();
             var httpContextAccessor = new Mock<IHttpContextAccessor>();

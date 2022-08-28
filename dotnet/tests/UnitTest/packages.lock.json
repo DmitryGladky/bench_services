@@ -1573,7 +1573,7 @@
         "type": "Project",
         "dependencies": {
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
-          "Talabat.${{values.component_id}}.Interfaces": "1.0.0"
+          "Talabat.ServiceBench.Interfaces": "1.0.0"
         }
       },
       "service": {
@@ -1599,10 +1599,10 @@
           "Serilog.Sinks.Console": "4.0.1",
           "Serilog.Sinks.File": "5.0.0",
           "Swashbuckle.AspNetCore": "6.3.1",
-          "Talabat.${{values.component_id}}.Interfaces": "1.0.0"
+          "Talabat.ServiceBench.Interfaces": "1.0.0"
         }
       },
-      "Talabat.${{values.component_id}}.Interfaces": {
+      "Talabat.ServiceBench.Interfaces": {
         "type": "Project"
       }
     }

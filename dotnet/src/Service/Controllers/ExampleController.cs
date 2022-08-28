@@ -1,11 +1,11 @@
 using System.Diagnostics.CodeAnalysis;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Talabat.${{values.component_id}}.CQRS.Cart.Commands;
-using Talabat.${{values.component_id}}.CQRS.Cart.Queries;
-using Talabat.${{values.component_id}}.External;
+using Talabat.ServiceBench.CQRS.Cart.Commands;
+using Talabat.ServiceBench.CQRS.Cart.Queries;
+using Talabat.ServiceBench.External;
 
-namespace Talabat.${{values.component_id}}.Controllers;
+namespace Talabat.ServiceBench.Controllers;
 //TODO The following example was created by Talabat.DotNet.Templates and should be removed.
 
 [ApiController]

@@ -1,4 +1,4 @@
-﻿namespace Talabat.${{values.component_id}}.Extensions.Configuration;
+﻿namespace Talabat.ServiceBench.Extensions.Configuration;
 
 public class CorsConfiguration
 {

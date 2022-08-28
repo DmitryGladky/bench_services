@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Talabat.${{values.component_id}};
+namespace Talabat.ServiceBench;
 
-public interface I${{values.component_id}} : IHealth, IExample
+public interface IServiceBench : IHealth, IExample
 {
 }
 

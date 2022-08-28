@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 
-namespace Talabat.${{values.component_id}};
+namespace Talabat.ServiceBench;
 
 [ExcludeFromCodeCoverage]
 public class ServiceOptions

@@ -3,15 +3,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace Talabat.${{values.component_id}}.CQRS.Cart.Commands
+namespace Talabat.ServiceBench.CQRS.Cart.Commands
 {
-    public class CreateCartCommandHandler : IRequestHandler<CreateCartCommand, ${{values.component_id}}.Cart>
+    public class CreateCartCommandHandler : IRequestHandler<CreateCartCommand, ServiceBench.Cart>
     {
-        public async Task<${{values.component_id}}.Cart> Handle(CreateCartCommand request, CancellationToken cancellationToken)
+        public async Task<ServiceBench.Cart> Handle(CreateCartCommand request, CancellationToken cancellationToken)
         {
             await Task.Delay(50, cancellationToken);
 
-            return new ${{values.component_id}}.Cart
+            return new ServiceBench.Cart
             {
                 Id = Guid.NewGuid().ToString(),
                 VendorId = request.VendorId

@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 
-namespace Talabat.${{values.component_id}}.Extensions;
+namespace Talabat.ServiceBench.Extensions;
 
 [ExcludeFromCodeCoverage]
 public static class AppBuilderExtensions

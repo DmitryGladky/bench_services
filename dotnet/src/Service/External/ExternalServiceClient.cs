@@ -1,7 +1,7 @@
 using Refit;
 using System.Threading.Tasks;
 
-namespace Talabat.${{values.component_id}}.External;
+namespace Talabat.ServiceBench.External;
 
 public interface IExternalServiceClient
 {

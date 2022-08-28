@@ -1,8 +1,8 @@
 using MediatR;
 
-namespace Talabat.${{values.component_id}}.CQRS.Cart.Commands
+namespace Talabat.ServiceBench.CQRS.Cart.Commands
 {
-    public class CreateCartCommand : IRequest<${{values.component_id}}.Cart>
+    public class CreateCartCommand : IRequest<ServiceBench.Cart>
     {
         public string VendorId { get; set; }
 

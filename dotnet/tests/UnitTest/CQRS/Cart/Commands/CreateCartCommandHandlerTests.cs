@@ -4,7 +4,7 @@ using AutoFixture;
 using FluentAssertions;
 using Xunit;
 
-namespace Talabat.${{values.component_id}}.CQRS.Cart.Commands
+namespace Talabat.ServiceBench.CQRS.Cart.Commands
 {
     public class CreateCartCommandHandlerTests
     {
@@ -28,7 +28,7 @@ namespace Talabat.${{values.component_id}}.CQRS.Cart.Commands
         public async Task CreateCartCommandHandler_WhenRequestProvided_ShouldReturnCorrectResponse()
         {
             var command = fixture.Build<CreateCartCommand>().Create();
-            var expected = new ${{values.component_id}}.Cart { VendorId = command.VendorId };
+            var expected = new ServiceBench.Cart { VendorId = command.VendorId };
 
 
             var actual = await createCartCommandHandler.Handle(command, default);

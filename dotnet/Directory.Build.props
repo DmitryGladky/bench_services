@@ -14,7 +14,7 @@
     <NoWarn>NU5105</NoWarn>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
-    <RootNamespace>Talabat.${{values.component_id}}</RootNamespace>
+    <RootNamespace>Talabat.ServiceBench</RootNamespace>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
