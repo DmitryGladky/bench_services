@@ -1,0 +1,8 @@
+version: "3.9" # optional since v1.27.0
+
+services:
+  dotnet:
+    build: dotnet/src/service
+    ports:
+      - "5080:80"
+      - "5443:443"
