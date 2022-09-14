@@ -29,7 +29,7 @@ function ghz_call {
 }
 
 function grpc_bench {
-  for c in 1 10 100 1000 10000 100000; do
+  for c in 1 10 100 1000 10000; do
     ghz_call $1 $c $2 $3
   done
 }
@@ -40,7 +40,7 @@ function wrk_call {
 }
 
 function rest_bench {
-  for c in 1 10 100 1000 10000 100000; do
+  for c in 1 10 100 1000 10000; do
     wrk_call "$1" $c "$2"
   done
 }
