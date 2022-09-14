@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
-using Serilog;
+using System.Net;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 namespace Talabat.ServiceBench;
 
@@ -26,9 +27,23 @@ public static class Program
     public static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
             .ConfigureWebHostDefaults(
-                webBuilder => webBuilder.UseStartup<Startup>())
+                webBuilder =>
+                {
+                    webBuilder.ConfigureKestrel(options =>
+                    {
+                        options.Listen(IPAddress.Any, 5001, listenOptions =>
+                        {
+                            listenOptions.Protocols = HttpProtocols.Http2;
+                        });
+                        options.Listen(IPAddress.Any, 5002, listenOptions =>
+                        {
+                            listenOptions.Protocols = HttpProtocols.Http1;
+                        });
+                    });
+                    webBuilder.UseStartup<Startup>();
+                })
             .ConfigureLogging(
-                builder => builder.ClearProviders().AddSerilog())
+                builder => builder.ClearProviders())
             .ConfigureAppConfiguration(
                 (hostingContext, config) => config.AddEnvironmentVariables());
 }

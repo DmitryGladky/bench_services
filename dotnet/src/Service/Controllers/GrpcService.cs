@@ -1,4 +1,3 @@
-using Google.Protobuf.Collections;
 using Grpc.Core;
 
 namespace Talabat.ServiceBench.Controllers;
@@ -16,7 +15,7 @@ public class GrpcService : Test.TestBase
     {
         // Logger.LogInformation("Testing CQRS Get Cart");
         var array = new int[request.Count];
-        for (int i = 0; i < request.Count; ++i)
+        for (var i = 0; i < request.Count; ++i)
         {
             array[i] = i;
         }
@@ -30,7 +29,7 @@ public class GrpcService : Test.TestBase
     public override async Task LongStream(LongRequest request, IServerStreamWriter<StreamReply> responseStream,
         ServerCallContext context)
     {
-        for (int i = 0; i < request.Count; ++i)
+        for (var i = 0; i < request.Count; ++i)
         {
             if (context.CancellationToken.IsCancellationRequested)
             {
