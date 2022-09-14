@@ -1,0 +1,43 @@
+
+Summary:
+  Count:	1083
+  Total:	10.00 s
+  Slowest:	669.25 ms
+  Fastest:	105.76 ms
+  Average:	457.04 ms
+  Requests/sec:	108.27
+
+Response time histogram:
+  105.755 [1]   |
+  162.105 [6]   |∎
+  218.454 [9]   |∎∎
+  274.803 [20]  |∎∎∎
+  331.152 [45]  |∎∎∎∎∎∎∎∎
+  387.501 [104] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  443.850 [230] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  500.200 [205] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  556.549 [206] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  612.898 [142] |∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
+  669.247 [65]  |∎∎∎∎∎∎∎∎∎∎∎
+
+Latency distribution:
+  10 % in 346.59 ms 
+  25 % in 408.36 ms 
+  50 % in 469.53 ms 
+  75 % in 543.26 ms 
+  90 % in 595.11 ms 
+  95 % in 619.38 ms 
+  99 % in 662.72 ms 
+
+Status code distribution:
+  [Canceled]      41 responses     
+  [OK]            1033 responses   
+  [Unavailable]   9 responses      
+
+Error distribution:
+  [3]    rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51373->127.0.0.1:6001: use of closed network connection   
+  [3]    rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51368->127.0.0.1:6001: use of closed network connection   
+  [2]    rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51370->127.0.0.1:6001: use of closed network connection   
+  [41]   rpc error: code = Canceled desc = grpc: the client connection is closing                                                                     
+  [1]    rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51372->127.0.0.1:6001: use of closed network connection   
+
